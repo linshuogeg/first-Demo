@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".fragment.BlankFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="470dp"
+                    android:background="#ffff"
+                    app:layout_scrollFlags="scroll">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="240dp"
+                        android:orientation="vertical"
+                        android:background="#E53935">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="京东"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginLeft="10dp">
+                        </TextView>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="300dp"
+                            android:layout_marginTop="-25dp"
+                            android:src="@mipmap/sao1">
+
+                        </ImageView>
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="340dp"
+                            android:layout_marginTop="-30dp"
+                            android:src="@mipmap/xiaoxi">
+
+                        </ImageView>
+
+                        <EditText
+                            android:background="@drawable/edit_background"
+                            android:layout_width="340dp"
+                            android:layout_height="42dp"
+                            android:paddingRight="15dp"
+                            android:paddingLeft="5dp"
+                            android:hint="户外背包"
+                            android:layout_gravity="center"
+                            android:id="@+id/sousuo"
+                            android:layout_marginTop="30dp"
+                            android:drawableRight="@mipmap/xiang"
+                            android:drawableLeft="@mipmap/sou3">
+
+                        </EditText>
+
+                    </LinearLayout>
+
+                    <com.youth.banner.Banner
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="140dp"
+                        android:id="@+id/banner">
+
+                    </com.youth.banner.Banner>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="320dp"
+                        android:id="@+id/rvv1">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+            </com.google.android.material.appbar.AppBarLayout>
+            <androidx.core.widget.NestedScrollView
+                android:layout_marginTop="480dp"
+                app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvv3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+
+            </androidx.core.widget.NestedScrollView>
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

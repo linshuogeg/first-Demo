@@ -1,0 +1,2 @@
+apply from :"gradles1/Version.gradle"
+apply from :"gradles1/Config.gradle"

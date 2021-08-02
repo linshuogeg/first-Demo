@@ -1,0 +1,9 @@
+rootProject.name = "Xiangmu"
+include ':app'
+include ':mvpkt'
+include ':Net'
+include ':Common'
+include ':gradles'
+include ':userCenter'
+include ':userCenter:usercenter'
+include ':usercenterq'
